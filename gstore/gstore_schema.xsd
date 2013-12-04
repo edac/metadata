@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="metadata">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="original"/>
+          <xs:element ref="identification" minOccurs="1" maxOccurs="1"/>
+          <xs:element ref="constraints" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="spatial" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="quality" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="lineage" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="attributes" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="metadata" minOccurs="1" maxOccurs="1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="contact">
+                  <xs:complexType>
+                    <xs:attribute name="role" use="required" type="role-definition"/>
+                    <xs:attribute name="ref" use="required" type="non-empty-element"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="pubdate">
+                  <xs:complexType>
+                    <xs:attribute name="date" use="required" type="date-or-unknown"/>
+                    <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element ref="distribution" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="contacts"/>
+          <xs:element ref="citations"/>
+          <xs:element ref="sources" minOccurs="0"/>
+          <xs:element ref="datasets" minOccurs="0"/>
+        </xs:sequence>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="original">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="standard" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="extension" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="profile" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="standard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="non-empty-element"/>
+        <xs:element name="url" type="non-empty-element" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="version" use="required" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="extension">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="non-empty-element"/>
+        <xs:element name="url" type="non-empty-element"/>
+      </xs:sequence>
+      <xs:attribute name="version" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="profile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="non-empty-element"/>
+        <xs:element name="url" type="non-empty-element" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="identification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="non-empty-element"/>
+        <xs:element name="abstract" type="non-empty-element"/>
+        <xs:element name="purpose"  minOccurs="0" maxOccurs="1" type="non-empty-element"/>
+        <xs:element name="supplinfo" minOccurs="0" maxOccurs="1" type="non-empty-element"/>
+        <xs:element name="contact"  minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="role" use="required" type="role-definition"/>
+            <xs:attribute name="ref" use="required" type="non-empty-element"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="citation" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="citation" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="role" use="required" type="role-definition"/>
+                  <xs:attribute name="ref" use="required" type="internal-id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:all>
+            <xs:attribute name="role" use="required" type="role-definition"/>
+            <xs:attribute name="ref" use="required" type="internal-id"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="time" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="isotopic" type="iso-topics" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="themes" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="places" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="stratums" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="temporals" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="browse" minOccurs="0"></xs:element>
+        <xs:element ref="native" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="credit" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="identifier" use="optional"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="time">
+    <xs:complexType>
+      <xs:sequence>
+         <xs:choice>
+           <xs:element name="range" minOccurs="1" maxOccurs="1">
+             <xs:complexType>
+               <xs:sequence>
+                 <xs:element name="start" minOccurs="1" maxOccurs="1">
+                   <xs:complexType>
+                     <xs:attribute name="date" use="required" type="date-or-unknown"/>
+                     <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+                   </xs:complexType>
+                 </xs:element>
+                 <xs:element name="end" minOccurs="0" maxOccurs="1">
+                   <xs:complexType>
+                     <xs:attribute name="date" use="required" type="date-or-unknown"/>
+                     <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+                   </xs:complexType>
+                 </xs:element>
+               </xs:sequence>
+             </xs:complexType>
+           </xs:element>
+           <xs:element name="single" minOccurs="1" maxOccurs="unbounded">
+             <xs:complexType>
+               <xs:attribute name="date" use="required" type="date-or-unknown"/>
+               <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+             </xs:complexType>
+           </xs:element>
+         </xs:choice>
+        <xs:element name="current" minOccurs="1" maxOccurs="1" type="non-empty-element"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="themes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="theme" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="theme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="term"/>
+      </xs:sequence>
+      <xs:attribute name="thesaurus" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="places">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="place" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="place">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="term"/>
+      </xs:sequence>
+      <xs:attribute name="thesaurus" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stratums">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stratum" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stratum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="term"/>
+      </xs:sequence>
+      <xs:attribute name="thesaurus" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="temporals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="temporal" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="temporal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="term"/>
+      </xs:sequence>
+      <xs:attribute name="thesaurus" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="term" type="non-empty-element"/>
+  <xs:element name="browse">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="filename" type="non-empty-element"/>
+        <xs:element name="description" type="non-empty-element"/>
+        <xs:element name="filetype" type="non-empty-element"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="native" type="non-empty-element"/>
+  <xs:element name="credit" type="non-empty-element"/>
+  <xs:element name="constraints">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="access" minOccurs="1" maxOccurs="unbounded"/>
+          <xs:element ref="use" minOccurs="1" maxOccurs="unbounded"/>
+          <xs:element ref="security" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element ref="other" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="access">
+    <xs:complexType mixed="true">
+      <xs:simpleContent>
+        <xs:extension base="non-empty-element">
+          <xs:attribute name="type" use="required" type="constraint-type"/>
+          <xs:attribute name="code" use="optional" type="non-empty-element"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="use">
+    <xs:complexType mixed="true">
+      <xs:simpleContent>
+        <xs:extension base="non-empty-element">
+          <xs:attribute name="type" use="required" type="constraint-type"/>
+          <xs:attribute name="code" use="optional" type="non-empty-element"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="security">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="classification">
+          <xs:complexType mixed="true">
+            <xs:attribute name="system" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="handling" type="non-empty-element"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" type="constraint-type"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="other">
+    <xs:complexType mixed="true">
+      <xs:simpleContent>
+        <xs:extension base="non-empty-element">
+          <xs:attribute name="type" use="required" type="constraint-type"></xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spatial">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- TODO: add some ranges for the coordinates -->
+        <xs:element ref="west" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="east" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="south" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="north" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="indspref" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="sprefs" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="vector"  minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="raster"  minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="west" type="longitude"/>
+  <xs:element name="east" type="longitude"/>
+  <xs:element name="south" type="latitude"/>
+  <xs:element name="north" type="latitude"/>
+  <xs:element name="indspref" type="non-empty-element"/>
+  <xs:element name="sprefs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="spref"/>
+        <xs:element name="representation" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- TODO: finish the schema for the representation/def element -->
+              <xs:element name="def" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="type" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="fgdc"></xs:enumeration>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spref">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="code" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="authority" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="onlineref" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="title" minOccurs="0" type="non-empty-element"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="datum"/>
+            <xs:enumeration value="ellipsoid"/>
+            <xs:enumeration value="mapproj"/>
+            <xs:enumeration value="gridsys"/>
+            <xs:enumeration value="vertdef"/>
+            <xs:enumeration value="Unknown"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="code" type="xs:string"/>
+  <xs:element name="authority" type="xs:string"/>
+  <xs:element name="onlineref" type="xs:anyURI"/>
+  <xs:element name="vector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sdts" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sdts">
+    <xs:complexType>
+      <xs:attribute name="features" use="required">
+        <xs:simpleType>
+          <xs:union>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="Unknown"/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:integer">
+                <xs:minInclusive value="0"></xs:minInclusive>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="type" use="required" type="sdts-type"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="raster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="rows" minOccurs="1" maxOccurs="1" type="xs:int"/>
+        <xs:element name="columns" minOccurs="1" maxOccurs="1" type="xs:int"/>
+        <xs:element name="verticals" minOccurs="0" maxOccurs="1" type="xs:int"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required"/>
+      <xs:attribute name="cval" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="quality">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="progress" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="update" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="logical" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="completeness" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="qual" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="cloud" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="percent">
+                <xs:attribute name="ref">
+                  <xs:simpleType>
+                    <!-- TODO: update this for an actual URL -->
+                    <xs:restriction base="xs:token">
+                      <xs:enumeration value="Unknown"></xs:enumeration>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:attribute>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="progress" type="xs:string"/>
+  <xs:element name="update" type="xs:string"/>
+  <xs:element name="logical" type="xs:string"/>
+  <xs:element name="completeness" type="xs:string"/>
+  <xs:element name="qual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="report" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="quantitative" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="value"/>
+              <xs:element name="explanation"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="horizontal"/>
+            <xs:enumeration value="vertical"/>
+            <xs:enumeration value="attribute"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lineage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="step" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="step">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="description" type="non-empty-element" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="rundate" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="contact" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:attribute name="role" use="required"/>
+            <xs:attribute name="ref" use="required" type="non-empty-element"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="source" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="ref" use="required" type="non-empty-element"/>
+            <xs:attribute name="type" use="required" type="source-type"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rundate">
+    <xs:complexType>
+      <xs:attribute name="date" use="required" type="date-or-unknown"/>
+      <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attributes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="overview" minOccurs="0" type="non-empty-element"/>
+        <xs:element name="eacite" minOccurs="0" type="non-empty-element"/>
+        <xs:element name="entity" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="label" type="non-empty-element"/>
+              <xs:element name="description" type="non-empty-element"/>
+              <xs:element name="source" type="non-empty-element" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="attr">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="label" type="non-empty-element"/>
+              <xs:element name="definition" type="non-empty-element"/>
+              <xs:element name="source" type="non-empty-element"/>          
+              <xs:choice minOccurs="1"  maxOccurs="1">
+                <xs:sequence>
+                  <xs:element name="unrepresented">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="description" type="non-empty-element"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:sequence>
+                  <xs:element name="range">
+                    <xs:complexType>
+                      <xs:all>
+                        <xs:element name="min" type="xs:string"/>
+                        <xs:element name="max" type="xs:string"/>
+                        <xs:element name="units" type="xs:string" minOccurs="0"/>
+                      </xs:all>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:sequence>
+                  <xs:element name="codeset">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="source" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:sequence>
+                  <xs:element name="enumerated">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="value" maxOccurs="unbounded" minOccurs="1">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="enum" type="xs:string"/>
+                              <xs:element name="description" type="xs:string"/>
+                              <xs:element name="source" type="xs:string"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:choice>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contacts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="contact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="position" minOccurs="0"/>
+              <xs:element name="organization" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name"/>
+                    <xs:element name="person" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="person" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="organization"/>
+                    <xs:element name="name"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="address" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="addr" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="city" minOccurs="0" type="non-empty-element"/>
+                    <xs:element name="state" minOccurs="0" type="non-empty-element"/>
+                    <xs:element name="postal" minOccurs="0" type="non-empty-element"/>
+                    <xs:element name="country" minOccurs="0" type="non-empty-element"/>
+                  </xs:sequence>
+                  <xs:attribute name="type" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <!-- TODO: this is ridiculous -->
+                        <xs:enumeration value="mailing and physical address"/>
+                        <xs:enumeration value="mailing and physical"/>
+                        <xs:enumeration value="Mailing and Physical Address"/>
+                        <xs:enumeration value="Mailing and physical address"/>
+                        <xs:enumeration value="mailing address"/>
+                        <xs:enumeration value="Mailing Address"/>
+                        <xs:enumeration value="Mailing address"/>
+                        <xs:enumeration value="physical address"/>
+                        <xs:enumeration value="Physical Address"/>
+                        <xs:enumeration value="Physical address"/>
+                        <xs:enumeration value="mailing"/>
+                        <xs:enumeration value="physical"/>
+                        <xs:enumeration value="Mailing"/>
+                        <xs:enumeration value="Physical"/>
+                        <xs:enumeration value="Unknown"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="voice" minOccurs="0" type="non-empty-element"/>
+              <xs:element name="fax" minOccurs="0" type="non-empty-element"/>
+              <xs:element name="email" minOccurs="0" type="non-empty-element"/>
+              <xs:element name="hours" minOccurs="0" type="non-empty-element"/>
+              <xs:element name="instructions" minOccurs="0" type="non-empty-element"/>
+            </xs:sequence>
+            <xs:attribute name="id" use="required" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="citations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="citation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="xs:string"/>
+              <xs:element name="origin" type="xs:string"/>
+              <xs:element name="geoform" minOccurs="0" />
+              <xs:element name="publication" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="pubdate">
+                      <xs:complexType>
+                        <xs:attribute name="date" use="required" type="date-or-unknown"/>
+                        <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="place" minOccurs="0"/>
+                    <xs:element name="publisher" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="serial" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" minOccurs="0"/>
+                    <xs:element name="issue" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>  
+              </xs:element>
+              <xs:element name="edition" minOccurs="0"/>
+              <xs:element name="othercit" minOccurs="0"/>
+              <xs:element name="onlink" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            </xs:sequence>
+            <xs:attribute name="id" use="required" type="xs:NCName"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="source" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type" minOccurs="0" type="non-empty-element"/>
+              <xs:element name="alias" minOccurs="0" type="non-empty-element"/>
+              <xs:element name="scale" minOccurs="0" type="non-empty-element"/>
+              <xs:element name="contribution" minOccurs="0" type="non-empty-element"/>
+              <xs:sequence minOccurs="0">
+                <xs:element name="current" type="non-empty-element"/>
+                <xs:element name="srcdate">
+                  <xs:complexType>
+                    <xs:choice>
+                      <xs:sequence>
+                        <xs:element name="single" maxOccurs="unbounded">
+                          <xs:complexType>
+                            <xs:attribute name="date" use="required" type="date-or-unknown"/>
+                            <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                      <xs:sequence>
+                        <xs:element name="range">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="start">
+                                <xs:complexType>
+                                  <xs:attribute name="date" use="required" type="date-or-unknown"/>
+                                  <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element name="end">
+                                <xs:complexType>
+                                  <xs:attribute name="date" use="required" type="date-or-unknown"/>
+                                  <xs:attribute name="time" use="optional" type="time-or-unknown"/>
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:choice>
+                    <xs:attribute name="type" use="optional"></xs:attribute>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:element name="citation">
+                <xs:complexType>
+                  <xs:attribute name="ref" use="required" type="non-empty-element"/>
+                  <xs:attribute name="role" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" use="required"/>
+            <xs:attribute name="type" use="required" type="source-type"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="distribution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="distributor" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contact" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="role" use="required" type="role-definition"/>
+                  <xs:attribute name="ref" use="required" type="non-empty-element"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="liability" minOccurs="0" maxOccurs="1" type="non-empty-element"></xs:element>
+              <xs:element name="instructions" minOccurs="0" maxOccurs="1" type="non-empty-element"></xs:element>
+              <xs:element name="fees" minOccurs="0" maxOccurs="1" type="non-empty-element"></xs:element>
+              <xs:element name="ordering" minOccurs="0" maxOccurs="1" type="non-empty-element"></xs:element>
+              <xs:element name="prereqs" minOccurs="0" maxOccurs="1" type="non-empty-element"></xs:element>
+              <xs:element name="access" minOccurs="0" maxOccurs="1" type="non-empty-element"></xs:element>
+              <xs:element name="description" minOccurs="0" maxOccurs="1" type="non-empty-element"></xs:element>
+              <xs:element name="downloads">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="download" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="type" type="non-empty-element"></xs:element>
+                          <xs:element name="size" type="non-empty-element" minOccurs="0"></xs:element>
+                          <xs:element name="link" type="non-empty-element"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="datasets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dataset" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- standard patterns -->
+  <xs:simpleType name="non-empty-element">
+    <xs:restriction base="xs:token">
+      <xs:minLength value="1"></xs:minLength>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="iso-date">
+    <!-- 
+      from this: http://regexlib.com/(A(H24Cr78_5s4tLWKInz3qKm7GueDRc_JcWoPHgmQqAHQ7V2y5xLDtn6ZkzRKLn4JO_y7TZr02N-p_rqp-hZVagqM1YgYW22Go_T-pqkdJJGYUYhi-3vI7-j2ELO-OhI7HScqRcvoOXjbkU1vbU87d_oLB6HPz6I3_6i15Xa1vqyFU2i8TiFRyjt_GEPWy5iIC0))/REDetails.aspx?regexp_id=1758 
+      but it had a bug - feb in non-leap years couldn't use any date ending in 9 (09/19)
+    -->
+    <xs:restriction base="xs:token">
+      <xs:pattern value="((18|19|20)(([0][48])|([2468][048])|([13579][26]))|2000)|((18|19|20)(([02468][1235679])|([13579][01345789]))|1900)|(1800)">
+        <xs:annotation>
+          <xs:documentation>for the year only (1800-2099)</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="(((18|19|20)(([0][48])|([2468][048])|([13579][26]))|2000|1800)[\-](([0][13578]|[1][02])|([0][469]|11)|02))|(((18|19|20)(([02468][1235679])|([13579][01345789]))|1900))[\-](([0][13578]|[1][02])|([0][2469]|11))">
+        <xs:annotation>
+          <xs:documentation>for the year and month only (yyyy-MM)</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="(((18|19|20)(([0][48])|([2468][048])|([13579][26]))|2000|1800)[\-](([0][13578]|[1][02])[\-]([012][0-9]|[3][01])|([0][469]|11)[\-]([012][0-9]|30)|02[\-]([012][0-9]))|((18|19|20)(([02468][1235679])|([13579][01345789]))|1900)[\-](([0][13578]|[1][02])[\-]([012][0-9]|[3][01])|([0][469]|11)[\-]([012][0-9]|30)|02[\-]([01][0-9]|[2][0-8])))">
+        <xs:annotation>
+          <xs:documentation>for the full iso date yyyy-MM-dd</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="date-or-unknown">
+    <xs:union memberTypes="iso-date">
+      <xs:annotation>
+        <xs:documentation>Date as valid ISO (yyyy-MM-dd or yyyy-MM or yyyy) or in [Unknown, Unpublished]</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Unknown"/>
+          <xs:enumeration value="Unpublished"/>
+          <xs:enumeration value="Present"/>
+          <xs:enumeration value="Not complete"/>
+          <xs:enumeration value="Incomplete"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  <xs:simpleType name="iso-time">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}">
+        <xs:annotation>
+          <xs:documentation>time as HH:mm::ss only</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}([\+|\-]([0-5][0-9]:[0-5][0-9]))"><xs:annotation>
+        <xs:documentation>time as HH:mm::ss with timestamp (+/-00:00)</xs:documentation>
+      </xs:annotation></xs:pattern>
+      <xs:pattern value="(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}Z">
+        <xs:annotation>
+          <xs:documentation>time as HH:mm::ss in utc (Z)</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="time-or-unknown">
+    <xs:union memberTypes="iso-time">
+      <xs:annotation>
+        <xs:documentation>Time as valid ISO (HH:mm:ss or HH:mm:ss+/-00:00 or HH:mm:ssZ) or in [Unknown]</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Unknown"/>
+          <xs:enumeration value="Present"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  <xs:simpleType name="role-definition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="responsible-party"/>
+      <xs:enumeration value="point-contact"/>
+      <xs:enumeration value="owner"/>
+      <xs:enumeration value="publisher"/>
+      <xs:enumeration value="identify"/>
+      <xs:enumeration value="crossref"/>
+      <xs:enumeration value="larger-work"/>
+      <xs:enumeration value="distributor"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="constraint-type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="data"/>
+      <xs:enumeration value="metadata"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="source-type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="prod"/>
+      <xs:enumeration value="used"/>
+      <xs:enumeration value="lineage"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="latitude">
+    <xs:restriction base="xs:double">
+      <xs:minInclusive value="-90.0"/>
+      <xs:maxInclusive value="90.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="longitude">
+    <xs:restriction base="xs:double">
+      <xs:minInclusive value="-180.0"/>
+      <xs:maxInclusive value="180.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="percent">
+    <xs:union>
+      <xs:simpleType>
+        <xs:restriction base="xs:int">
+          <xs:minInclusive value="0"/>
+          <xs:maxInclusive value="100"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Unknown"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  <xs:simpleType name="sdts-type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Entity point"/>
+      <xs:enumeration value="Point"/>
+      <xs:enumeration value="Label point"/>
+      <xs:enumeration value="Area point"/>
+      <xs:enumeration value="Node, planar graph"/>
+      <xs:enumeration value="Node, network"/>
+      <xs:enumeration value="String"/>
+      <xs:enumeration value="Link"/>
+      <xs:enumeration value="Complete chain"/>
+      <xs:enumeration value="Area chain"/>
+      <xs:enumeration value="Network chain, planar graph"/>
+      <xs:enumeration value="Network chain, nonplanar graph"/>
+      <xs:enumeration value="Circular arc, three point center"/>
+      <xs:enumeration value="Elliptical arc"/>
+      <xs:enumeration value="Uniform B-spline"/>
+      <xs:enumeration value="Piecewise Bezier"/>
+      <xs:enumeration value="Ring with mixed composition"/>
+      <xs:enumeration value="Ring composed of strings"/>
+      <xs:enumeration value="Ring composed of chains"/>
+      <xs:enumeration value="Ring composed of arcs"/>
+      <xs:enumeration value="G-polygon"/>
+      <xs:enumeration value="GT-polygon composed of rings"/>
+      <xs:enumeration value="GT-polygon composed of chains"/>
+      <xs:enumeration value="Universe polygon composed of rings"/>
+      <xs:enumeration value="Universe polygon composed of chains"/>
+      <xs:enumeration value="Void polygon composed of rings"/>
+      <xs:enumeration value="Void polygon composed of chains"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="iso-topics">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="farming"/>
+      <xs:enumeration value="biota"/>
+      <xs:enumeration value="boundaries"/>
+      <xs:enumeration value="climatologyMeteorologyAtmosphere"/>
+      <xs:enumeration value="economy"/>
+      <xs:enumeration value="elevation"/>
+      <xs:enumeration value="environment"/>
+      <xs:enumeration value="geoscientificInformation"/>
+      <xs:enumeration value="health"/>
+      <xs:enumeration value="imageryBaseMapsEarthCover"/>
+      <xs:enumeration value="intelligenceMilitary"/>
+      <xs:enumeration value="inlandWaters"/>
+      <xs:enumeration value="location"/>
+      <xs:enumeration value="oceans"/>
+      <xs:enumeration value="planningCadastre"/>
+      <xs:enumeration value="society"/>
+      <xs:enumeration value="structure"/>
+      <xs:enumeration value="transportation"/>
+      <xs:enumeration value="utilitiesCommunication"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="internal-id">
+    <xs:union memberTypes="non-empty-element">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <!-- TODO: change this to be no whitespace (or not spaces between chars) -->
+          <xs:pattern value="[\S]"></xs:pattern>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+</xs:schema>
