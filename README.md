@@ -53,7 +53,7 @@ The [GSTORE platform](http://gstore.unm.edu) utilizes a custom metadata schema t
         gstore_to_fgdc.xsl : GSTORE xml to FGDC-STD-001-1998/FGDC-STD-012-2002 xml
         gstore_to_iso_html.xsl : GSTORE xml to ISO 19115:2003 html (includes schema.org Dataset markup)
         gstore_to_iso.xsl : GSTORE xml to ISO 19115:2003 xml
-        gstore_to_pod_singleton.xsl : GSTORE to [Project Open Data](https://github.com/project-open-data/project-open-data.github.io/blob/master/metadata-resources.md) dataset JSON (note: this is preliminary)
+        gstore_to_pod_singleton.xsl : GSTORE to Project Open Data dataset JSON (note: this is preliminary)
         iso_to_gstore-ns.xsl : ISO 19115:2003 to GSTORE xml (note that it is incomplete and assumes a distribution element similar to the GSTORE to ISO output)
         readme.md
         remove-namespaces.xsl : required for the iso_to_gstore-ns transformation
@@ -92,7 +92,7 @@ The [GSTORE platform](http://gstore.unm.edu) utilizes a custom metadata schema t
             collection_ISO-19115-DS.xml
             collection_services.json : the GSTORE object (in this instance, a collection) description response
 
-            example_opendata.json : example output for [Project Open Data](https://github.com/project-open-data/project-open-data.github.io/blob/master/metadata-resources.md) JSON schema
+            example_opendata.json : example output for Project Open Data JSON schema
         
         input_xml/ : input xml for the GSTORE transformations (starting with FGDC-* for dataset objects or GSTORE for collection objects)
             vector_FGDC.xml
