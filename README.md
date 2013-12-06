@@ -38,115 +38,116 @@ The [GSTORE platform](http://gstore.unm.edu) utilizes a custom metadata schema t
 
 **File Descriptions**
 
-gstore/
-    *_mapping.json : the current live mappings for GSTORE objects in Elasticsearch.
+    gstore/
 
-    fgdc_to_gstore.xsl : FGDC-STD-001-1998 or FGDC-STD-012-2002 xml to GSTORE xml
-    gstore_schema.xsd : the GSTORE schema
-    gstore_to_19110.xsl : GSTORE xml to ISO 19110 FeatureCatalogue xml
-    gstore_to_19119.xsl : GSTORE xml to ISO 19110 FeatureCatalogue xml
-    gstore_to_dc.xsl : GSTORE xml to basic Dublin Core xml (note that it is incomplete)
-    gstore_to_ds.xsl : GSTORE xml for collection to ISO 19115 DS Data Series xml
-    gstore_to_eml.xsl : GSTORE xml to basic EML xml (note that it is incomplete)
-    gstore_to_fgdc_html.xsl : GSTORE xml to FGDC-STD-001-1998/FGDC-STD-012-2002 html (includes schema.org Dataset markup)
-    gstore_to_fgdc.xsl : GSTORE xml to FGDC-STD-001-1998/FGDC-STD-012-2002 xml
-    gstore_to_iso_html.xsl : GSTORE xml to ISO 19115:2003 html (includes schema.org Dataset markup)
-    gstore_to_iso.xsl : GSTORE xml to ISO 19115:2003 xml
-    gstore_to_pod_singleton.xsl : GSTORE to [Project Open Data](https://github.com/project-open-data/project-open-data.github.io/blob/master/metadata-resources.md) dataset JSON (note: this is preliminary)
-    iso_to_gstore-ns.xsl : ISO 19115:2003 to GSTORE xml (note that it is incomplete and assumes a distribution element similar to the GSTORE to ISO output)
-    readme.md
-    remove-namespaces.xsl : required for the iso_to_gstore-ns transformation
-    wcs_getcapabilities_to_19119.xsl : WCS GetCapabilities xml to ISO 19119 Web Services xml
-    wfs_getcapabilities_to_19119.xsl : WFS GetCapabilities xml to ISO 19119 Web Services xml
-    wms_getcapabilities_to_19119.xsl : WMS GetCapabilities xml to ISO 19119 Web Services xml
+        *_mapping.json : the current live mappings for GSTORE objects in Elasticsearch.
 
-    from_gstore/ : examples of vector or raster metadata documents stored or generated through the GSTORE API
-        raster_FGDC-STD-012-2002.html
-        raster_FGDC-STD-012-2002.xml
-        raster_GSTORE.xml : the modified GSTORE schema xml before transformation to another standard
-        raster_ISO-19115 2003.html
-        raster_ISO-19115-2003.xml
-        raster_ISO-19119-WCS.xml
-        raster_ISO-19119-WMS.xml
-        raster_services.json : the GSTORE object (in this instance, a dataset) description response
-        raster_STORED_FGDC.xml : the original xml delivered for import to GSTORE
-        raster_STORED_GSTORE.xml : the converted GSTORE schema xml generated from the original xml but not modified for delivery
-        raster_wms_getcapabilities.xml : WMS GetCapabilities response
+        fgdc_to_gstore.xsl : FGDC-STD-001-1998 or FGDC-STD-012-2002 xml to GSTORE xml
+        gstore_schema.xsd : the GSTORE schema
+        gstore_to_19110.xsl : GSTORE xml to ISO 19110 FeatureCatalogue xml
+        gstore_to_19119.xsl : GSTORE xml to ISO 19110 FeatureCatalogue xml
+        gstore_to_dc.xsl : GSTORE xml to basic Dublin Core xml (note that it is incomplete)
+        gstore_to_ds.xsl : GSTORE xml for collection to ISO 19115 DS Data Series xml
+        gstore_to_eml.xsl : GSTORE xml to basic EML xml (note that it is incomplete)
+        gstore_to_fgdc_html.xsl : GSTORE xml to FGDC-STD-001-1998/FGDC-STD-012-2002 html (includes schema.org Dataset markup)
+        gstore_to_fgdc.xsl : GSTORE xml to FGDC-STD-001-1998/FGDC-STD-012-2002 xml
+        gstore_to_iso_html.xsl : GSTORE xml to ISO 19115:2003 html (includes schema.org Dataset markup)
+        gstore_to_iso.xsl : GSTORE xml to ISO 19115:2003 xml
+        gstore_to_pod_singleton.xsl : GSTORE to [Project Open Data](https://github.com/project-open-data/project-open-data.github.io/blob/master/metadata-resources.md) dataset JSON (note: this is preliminary)
+        iso_to_gstore-ns.xsl : ISO 19115:2003 to GSTORE xml (note that it is incomplete and assumes a distribution element similar to the GSTORE to ISO output)
+        readme.md
+        remove-namespaces.xsl : required for the iso_to_gstore-ns transformation
+        wcs_getcapabilities_to_19119.xsl : WCS GetCapabilities xml to ISO 19119 Web Services xml
+        wfs_getcapabilities_to_19119.xsl : WFS GetCapabilities xml to ISO 19119 Web Services xml
+        wms_getcapabilities_to_19119.xsl : WMS GetCapabilities xml to ISO 19119 Web Services xml
+
+        from_gstore/ : examples of vector or raster metadata documents stored or generated through the GSTORE API
+            raster_FGDC-STD-012-2002.html
+            raster_FGDC-STD-012-2002.xml
+            raster_GSTORE.xml : the modified GSTORE schema xml before transformation to another standard
+            raster_ISO-19115 2003.html
+            raster_ISO-19115-2003.xml
+            raster_ISO-19119-WCS.xml
+            raster_ISO-19119-WMS.xml
+            raster_services.json : the GSTORE object (in this instance, a dataset) description response
+            raster_STORED_FGDC.xml : the original xml delivered for import to GSTORE
+            raster_STORED_GSTORE.xml : the converted GSTORE schema xml generated from the original xml but not modified for delivery
+            raster_wms_getcapabilities.xml : WMS GetCapabilities response
+            
+            vector_FGDC-STD-001-1998.html
+            vector_FGDC-STD-001-1998.xml
+            vector_GSTORE.xml : the modified GSTORE schema xml before transformation to another standard
+            vector_ISO-19115 2003.html
+            vector_ISO-19115-2003.xml
+            vector_ISO-19110.xml
+            vector_ISO-19119-WFS.xml
+            vector_ISO-19119-WMS.xml
+            vector_services.json : the GSTORE object (in this instance, a dataset) description response
+            vector_STORED_FGDC.xml : the original xml delivered for import to GSTORE
+            vector_STORED_GSTORE.xml : the converted GSTORE schema xml generated from the original xml but not modified for delivery
+            vector_wms_getcapabilities.xml : WMS GetCapabilities response
+
+            collection_GSTORE.xml : the modified GSTORE schema xml before transformation to another standard
+            collection_STORED_GSTORE.xml : the original xml delivered for import to GSTORE
+            collection_ISO-19115-DS.xml
+            collection_services.json : the GSTORE object (in this instance, a collection) description response
+
+            example_opendata.json : example output for [Project Open Data](https://github.com/project-open-data/project-open-data.github.io/blob/master/metadata-resources.md) JSON schema
         
-        vector_FGDC-STD-001-1998.html
-        vector_FGDC-STD-001-1998.xml
-        vector_GSTORE.xml : the modified GSTORE schema xml before transformation to another standard
-        vector_ISO-19115 2003.html
-        vector_ISO-19115-2003.xml
-        vector_ISO-19110.xml
-        vector_ISO-19119-WFS.xml
-        vector_ISO-19119-WMS.xml
-        vector_services.json : the GSTORE object (in this instance, a dataset) description response
-        vector_STORED_FGDC.xml : the original xml delivered for import to GSTORE
-        vector_STORED_GSTORE.xml : the converted GSTORE schema xml generated from the original xml but not modified for delivery
-        vector_wms_getcapabilities.xml : WMS GetCapabilities response
-
-        collection_GSTORE.xml : the modified GSTORE schema xml before transformation to another standard
-        collection_STORED_GSTORE.xml : the original xml delivered for import to GSTORE
-        collection_ISO-19115-DS.xml
-        collection_services.json : the GSTORE object (in this instance, a collection) description response
-
-        example_opendata.json : example output for [Project Open Data](https://github.com/project-open-data/project-open-data.github.io/blob/master/metadata-resources.md) JSON schema
-    
-    input_xml/ : input xml for the GSTORE transformations (starting with FGDC-* for dataset objects or GSTORE for collection objects)
-        vector_FGDC.xml
-        raster_FGDC.xml
-        collection_GSTORE.xml
+        input_xml/ : input xml for the GSTORE transformations (starting with FGDC-* for dataset objects or GSTORE for collection objects)
+            vector_FGDC.xml
+            raster_FGDC.xml
+            collection_GSTORE.xml
 
 **URLs for the example dataset**
 
-vector:
+    vector:
 
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/services.json
-    
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/FGDC-STD-001-1998.html   
-      
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/FGDC-STD-001-1998.xml  
-     
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19115 2003.html
-    
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19115-2003.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19110.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19119:WFS.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19119:WMS.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/GSTORE.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/services/ogc/wms?SERVICE=wms&REQUEST=GetCapabilities&VERSION=1.1.1
-    
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/services.json
+        
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/FGDC-STD-001-1998.html   
+          
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/FGDC-STD-001-1998.xml  
+         
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19115 2003.html
+        
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19115-2003.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19110.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19119:WFS.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/ISO-19119:WMS.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/metadata/GSTORE.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/c9ca5336-e72e-4e19-a225-9a4bfff311a2/services/ogc/wms?SERVICE=wms&REQUEST=GetCapabilities&VERSION=1.1.1
+        
 
-raster:
+    raster:
 
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services.json
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/FGDC-STD-012-2002.html 
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/FGDC-STD-012-2002.xml 
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19115 2003.html
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19115-2003.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19119:WCS.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19119:WMS.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/GSTORE.xml
-    
-    http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?SERVICE=wms&REQUEST=GetCapabilities&VERSION=1.1.1
-    
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services.json
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/FGDC-STD-012-2002.html 
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/FGDC-STD-012-2002.xml 
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19115 2003.html
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19115-2003.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19119:WCS.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19119:WMS.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/GSTORE.xml
+        
+        http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?SERVICE=wms&REQUEST=GetCapabilities&VERSION=1.1.1
+        
 
-collection:
+    collection:
 
-    Collections are not currently available through GSTORE. 
+        Collections are not currently available through GSTORE. 
 
 
 
