@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/WMS_MS_Capabilities.dtd"
+ [
+ <!ELEMENT VendorSpecificCapabilities EMPTY>
+ ]>  <!-- end of DOCTYPE declaration -->
+
+<WMT_MS_Capabilities version="1.1.1">
+
+<!-- MapServer version 6.0.3 OUTPUT=GIF OUTPUT=PNG OUTPUT=JPEG OUTPUT=KML SUPPORTS=PROJ SUPPORTS=AGG SUPPORTS=FREETYPE SUPPORTS=ICONV SUPPORTS=WMS_SERVER SUPPORTS=WMS_CLIENT SUPPORTS=WFS_SERVER SUPPORTS=WFS_CLIENT SUPPORTS=WCS_SERVER SUPPORTS=SOS_SERVER INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE -->
+
+<Service>
+  <Name>OGC:WMS</Name>
+  <Title>rgis Dataset (42caae77-7536-4423-bdc1-5d42b6635d4a)</Title>
+  <Abstract>WMS Service for rgis dataset STRAWBERRY PEAK, SW NAIP DOQQ (3310660) - 2011</Abstract>
+        <KeywordList>
+          <Keyword>rgis</Keyword>
+          <Keyword> New Mexico</Keyword>
+        </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms"/>
+  <ContactInformation>
+    <ContactPersonPrimary>
+      <ContactPerson>GStore Support</ContactPerson>
+      <ContactOrganization>Earth Data Analysis Center</ContactOrganization>
+    </ContactPersonPrimary>
+      <ContactPosition>technical support</ContactPosition>
+    <ContactAddress>
+        <AddressType>Mailing address</AddressType>
+        <Address>Earth Data Analysis Center, MSC01 1110, 1 University of New Mexico</Address>
+        <City>Albuquerque</City>
+        <StateOrProvince>NM</StateOrProvince>
+        <PostCode>87131</PostCode>
+        <Country>US</Country>
+    </ContactAddress>
+      <ContactVoiceTelephone>(505) 277-3622</ContactVoiceTelephone>
+      <ContactFacsimileTelephone>(505) 277-3614</ContactFacsimileTelephone>
+  <ContactElectronicMailAddress>devteam@edac.unm.edu</ContactElectronicMailAddress>
+  </ContactInformation>
+  <Fees>None</Fees>
+  <AccessConstraints>none</AccessConstraints>
+</Service>
+
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>application/vnd.ogc.wms_xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/png</Format>
+      <Format>image/gif</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/png; mode=8bit</Format>
+      <Format>image/tiff</Format>
+      <Format>application/vnd.google-earth.kml+xml</Format>
+      <Format>application/vnd.google-earth.kmz</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <GetFeatureInfo>
+      <Format>text/plain</Format>
+      <Format>application/vnd.ogc.gml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetFeatureInfo>
+    <DescribeLayer>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </DescribeLayer>
+    <GetLegendGraphic>
+      <Format>image/png</Format>
+      <Format>image/gif</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/png; mode=8bit</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetLegendGraphic>
+    <GetStyles>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetStyles>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+    <Format>application/vnd.ogc.se_inimage</Format>
+    <Format>application/vnd.ogc.se_blank</Format>
+  </Exception>
+  <VendorSpecificCapabilities />
+  <UserDefinedSymbolization SupportSLD="1" UserLayer="0" UserStyle="1" RemoteWFS="0"/>
+  <Layer>
+    <Name>RGIS_Dataset</Name>
+    <Title>rgis Dataset (42caae77-7536-4423-bdc1-5d42b6635d4a)</Title>
+    <Abstract>WMS Service for rgis dataset STRAWBERRY PEAK, SW NAIP DOQQ (3310660) - 2011</Abstract>
+    <KeywordList>
+     <Keyword>rgis</Keyword>
+     <Keyword> New Mexico</Keyword>
+    </KeywordList>
+    <SRS>EPSG:26913</SRS>
+    <SRS>EPSG:4326</SRS>
+    <SRS>EPSG:4269</SRS>
+    <SRS>EPSG:4267</SRS>
+    <SRS>EPSG:26912</SRS>
+    <SRS>EPSG:26914</SRS>
+    <SRS>EPSG:26713</SRS>
+    <SRS>EPSG:26712</SRS>
+    <SRS>EPSG:26714</SRS>
+    <SRS>EPSG:3857</SRS>
+    <LatLonBoundingBox minx="-106.63" miny="32.9955" maxx="-106.558" maxy="33.067" />
+    <BoundingBox SRS="EPSG:26913"
+                minx="347880" miny="3.65196e+06" maxx="354450" maxy="3.6598e+06" />
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>m_3310660_sw_13_1_20110521</Name>
+        <Title>m_3310660_sw_13_1_20110521</Title>
+        <Abstract>STRAWBERRY PEAK, SW NAIP DOQQ (3310660) - 2011</Abstract>
+        <KeywordList>
+          <Keyword></Keyword>
+        </KeywordList>
+        <SRS>epsg:26913</SRS>
+        <LatLonBoundingBox minx="-106.63" miny="32.9955" maxx="-106.558" maxy="33.067" />
+        <BoundingBox SRS="epsg:26913"
+                    minx="347880" miny="3.65196e+06" maxx="354450" maxy="3.6598e+06" />
+        <MetadataURL type="FGDC-STD-012-2002">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/FGDC-STD-012-2002.xml"/>
+        </MetadataURL>
+    </Layer>
+  </Layer>
+</Capability>
+</WMT_MS_Capabilities>

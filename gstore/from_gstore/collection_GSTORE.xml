@@ -1,0 +1,239 @@
+<metadata>
+   <original>
+      <standard version="FGDC-STD-001-1998">
+         <title>FGDC Content Standards for Digital Geospatial Metadata</title>
+      </standard>
+      <profile>
+         <title>ESRI Metadata Profile</title>
+         <url>http://www.esri.com/metadata/esriprof80.html</url>
+      </profile>
+   </original>
+   <identification identifier="fe736f09-41ca-4a06-8083-ca0bc4889389">
+      <title>modis a</title>
+      <abstract>Orthophotos combine the image characteristics of a photograph with the geometric qualities of a map. The primary digital orthophotoquadrangle (DOQ) is a 1-meter ground resolution, quarter-quadrangle (3.75 minutes of latitude by 3.75 minutes of longitude) image cast on the Universal Transverse Mercator projection (UTM) on the North American Datum of 1983 (NAD83). The geographic extent of the DOQ is equivalent to a quarter-quadrangle plus the overedge ranges from a minimum of 50 meters to a maximum of 300 meters beyond the extremes of the primary and secondary corner points.</abstract>
+      <purpose>DOQs serve a variety of purposes, from interim maps to field references for Earth science investigations and analysis. The DOQ is useful as a layer of a geographic information system and as a tool for revision of digital line graphs and topographic maps.</purpose>
+      <supplinfo>DOQQs are available in two formats. The GeoTIFFs are uncompressed files, and due to file size limitations, are not available for downloading from the Resource Geographic Information System Program (RGIS) website. Therefore, they are available only through the custom order process described in the Distribution section of these metadata. The MrSid (.sid) files and/or Enhanced Compressed Wavelet files have been created from the GeoTIFFs and are a 1:40 (.sid) and 1:15 (.ecw) compression of the GeoTIFF file. The compression creates a smaller file size that can be downloaded easily from the RGIS website and is readily available.</supplinfo>
+      <contact role="point-contact" ref="d1e161"/>
+      <citation role="identify" ref="d1e9"/>
+      <time>
+         <single date="2003-01-05"/>
+         <current>ground condition</current>
+      </time>
+      <isotopic>imageryBaseMapsEarthCover</isotopic>
+      <themes>
+         <theme thesaurus="none">
+            <term>DOQ</term>
+            <term>digital image map</term>
+            <term>digital orthophotoquad</term>
+            <term>DOQQ</term>
+            <term>quarter-quadrangle orthophoto</term>
+            <term>rectified photograph</term>
+            <term>orthophoto</term>
+            <term>1-meter orthophoto</term>
+            <term>3.75 x 3.75 minute orthophoto</term>
+            <term>aerial photograph</term>
+            <term>digital orthophoto</term>
+         </theme>
+      </themes>
+      <places>
+         <place thesaurus="None">
+            <term>US</term>
+            <term>NM</term>
+            <term>GOWDY RANCH</term>
+         </place>
+      </places>
+   </identification>
+   <constraints>
+      <access type="data">none</access>
+      <use type="data">None. Acknowledgement of the U.S. Geological Survey and RGIS is appreciated in products derived from these data.</use>
+      <access type="metadata">None</access>
+      <use type="metadata">None</use>
+      <security type="data">
+         <classification system="none">Unclassified</classification>
+         <handling>none</handling>
+      </security>
+      <security type="metadata">
+         <classification system="None">Unclassified</classification>
+         <handling>None</handling>
+      </security>
+   </constraints>
+   <spatial>
+      <west>-107.930153271</west>
+      <east>-104.994718803</east>
+      <south>34.9674233732</south>
+      <north>38.5334870385</north>
+   </spatial>
+   <quality>
+      <progress>Complete</progress>
+      <update>sporadic</update>
+      <logical>All DOQ header data and image file sizes are validated by Tape Validation System (TVS) software prior to archiving in the Sales Data Base. This validation procedure assures correct physical format and field values for header record elements. Logical relationships between header record elements are tested.</logical>
+      <completeness>All DOQ images are visually inspected for completeness to ensure that no gaps or image misplacement exists in the image area or in overedge coverage. The DOQ images may be derived by mosaicking multiple images, in order to ensure complete coverage. All DOQs are cloud free. Some clouds may (very infrequently) be encountered only in the overedge coverage. Source photography is leaf-off in deciduous vegetation regions. Void areas may exist, having a radiometric value of zero and appearing black. These voids are areas for which no photographic source is available or are the result of image transformation from other planimetric systems to the UTM projection. In the latter case, the void sliver areas are on the outside edges of the overedge area. The data set field content of each DOQ header record element is validated to assure completeness prior to archiving in the Sales Data Base.</completeness>
+      <qual type="attribute">
+         <report>During photographic reproduction of the source photography, limited analog dodging is performed to improve image quality. Analog dodging consists of holding back light from certain areas of the sensitized photographic material to avoid overexposure. The diapositive is inspected to insure clarity and radiometric uniformity. Diapositive image brightness values are collected with a minimum of image quality manipulation. Image brightness values may deviate from brightness values of the original imagery due to image value interpolation during the scanning and rectification processes. Radiometry is verified by visually inspecting the DOQs to the original unrectified image to determine if the DOQ has the same image quality or better image quality than the original unrectified input image. Slight systematic and radiometric differences can be detected between adjacent DOQ files due primarily to differences in source photography capture dates and Sun angles of aerial photography
+            along flight lines. These differences can be observed in an image's general lightness or darkness when compared to adjacent DOQ files.</report>
+         <quantitative>
+            <value>7.0 meters RMSE</value>
+            <explanation>The DOQ root-mean-square-error (RMSE) is the square root of the average of the squared discrepancies. These discrepancies are the differences in coordinate (x and y) values derived by comparing the data being tested with values determined during aerotriangulation or by an independent survey of higher accuracy.</explanation>
+         </quantitative>
+      </qual>
+      <qual type="horizontal">
+         <report>The DOQ horizontal positional accuracy and the assurance of that accuracy depend, in part, on the accuracy of the data inputs to the rectification process. These inputs consist of the digital elevation model (DEM), aerotriangulation control and methods, the photo source camera calibration, scanner calibration, and aerial photographs that meet National Aerial Photography Program (NAPP) standards. Field control is acquired by third order class 1 or better survey methods sufficiently spaced to meet National Map Accuracy Standards for 1:12,000 scale products. Aerial cameras have current certification from the USGS, National Mapping Division, Optical Science Laboratory. Test calibration scans are performed on all source photography scanners.</report>
+      </qual>
+      <qual type="vertical">
+         <report>The vertical accuracy of the verified USGS format DEM is equivalent to or better than a USGS level-1 or -2 DEM.</report>
+         <quantitative>
+            <value>7</value>
+            <explanation>meters</explanation>
+         </quantitative>
+      </qual>
+   </quality>
+   <metadata>
+      <contact role="point-contact" ref="gstore-100"/>
+      <pubdate date="2013-12-06" time="13:17:19"/>
+   </metadata>
+   <contacts>
+      <contact id="d1e161">
+         <position>Customer Services Representative</position>
+         <organization>
+            <name>U.S. Geological Survey EROS Data Center</name>
+            <person>Customer Services Representative</person>
+         </organization>
+         <address type="mailing and physical address">
+            <addr>Customer Services U.S. Geological Survey EROS Data Center</addr>
+            <city>Sioux Falls</city>
+            <state>SD</state>
+            <postal>57198-0001</postal>
+            <country>USA</country>
+         </address>
+         <voice> 605-594-6151 or USA toll free: 1-888-ASK-USGS (275-8747) Contact_TDD_TTY_Telephone: 605-594-6933 </voice>
+         <fax>605-594-6589</fax>
+         <email>custserv@usgs.gov</email>
+         <hours>0800 - 1600 CT, M-F, -6 hours GMT</hours>
+      </contact>
+      <contact id="d1e532">
+         <position>Customer Services Representative</position>
+         <organization>
+            <name>U.S. Geological Survey EROS Data Center</name>
+         </organization>
+         <address type="mailing and physical address">
+            <addr>U.S. Geological Survey EROS Data Center</addr>
+            <city>Sioux Falls</city>
+            <state>SD</state>
+            <postal>57198-0001</postal>
+            <country>USA</country>
+         </address>
+         <voice>605-594-6151 or USA toll free: 1-888-ASK-USGS (275-8747)</voice>
+         <fax>605-594-6589</fax>
+         <email>custserv@usgs.gov</email>
+         <hours>0800 - 1600 CT, M-F, -6 hours GMT</hours>
+      </contact>
+      <contact id="d1e592">
+         <position>Clearinghouse Manager</position>
+         <organization>
+            <name>Earth Data Analysis Center</name>
+         </organization>
+         <address type="mailing and physical address">
+            <addr>
+MSC01 1110, Bandelier West Room 111
+1 University of New Mexico
+</addr>
+            <city>Albuquerque</city>
+            <state>NM</state>
+            <postal>87131-0001</postal>
+            <country>USA</country>
+         </address>
+         <voice>505-277-3622 ext. 230</voice>
+         <fax>505-277-3614</fax>
+         <email>clearinghouse@edac.unm.edu</email>
+         <hours>0800 - 1700 MT, M-F -7 hours GMT</hours>
+      </contact>
+      <contact id="d1e753">
+         <position>Clearinghouse Manager</position>
+         <organization>
+            <name>Earth Data Analysis Center</name>
+         </organization>
+         <address type="mailing and physical address">
+            <addr>MSC01 1110</addr>
+            <addr>1 University of New Mexico</addr>
+            <city>Albuquerque</city>
+            <state>NM</state>
+            <postal>87131-0001</postal>
+            <country>USA</country>
+         </address>
+         <voice>505-277-3622 ext. 230</voice>
+         <fax>505-277-3614</fax>
+         <email>clearinghouse@edac.unm.edu</email>
+         <hours>0800 - 1700 MT, M-F -7 hours GMT</hours>
+      </contact>
+      <contact id="gstore-100">
+         <position>Clearinghouse Manager</position>
+         <organization>
+            <name>Earth Data Analysis Center</name>
+         </organization>
+         <address type="mailing and physical address"><addr>MSC01 1110</addr><addr>1 University of New Mexico</addr><city>Albuquerque</city><state>NM</state><postal>87131-0001</postal><country>USA</country></address>
+         <voice>505-277-3622 ext. 230</voice>
+         <fax>505-277-3614</fax>
+         <email>clearinghouse@edac.unm.edu</email>
+         <hours>0800 - 1700 MT, M-F -7 hours GMT</hours>
+      </contact>
+   </contacts>
+   <citations>
+      <citation id="d1e9">
+         <title>modis a</title>
+         <origin>U.S. Geological Survey (USGS) EROS Data Center (EDC)</origin>
+         <geoform>remote-sensing image</geoform>
+         <publication>
+            <pubdate date="2004-03-26"/>
+            <place>Menlo Park, CA USA</place>
+            <publisher>U.S. Geological Survey</publisher>
+         </publication>
+         <onlink>http://gstore.unm.edu/apps/rgis/collections/fe736f09-41ca-4a06-8083-ca0bc4889389/services.json</onlink>
+      </citation>
+      <citation id="d1e294">
+         <title>GOWDY RANCH</title>
+         <origin>U.S. Geological Survey</origin>
+         <geoform>map</geoform>
+         <publication>
+            <pubdate date="1962-07-01"/>
+            <place>Menlo Park, CA USA</place>
+            <publisher>U.S. Geological Survey</publisher>
+         </publication>
+      </citation>
+      <citation id="d1e351">
+         <title>NAPP 13019 91</title>
+         <origin>U.S. Geological Survey</origin>
+         <geoform>remote-sensing image</geoform>
+         <publication>
+            <pubdate date="Unknown"/>
+            <place>Menlo Park, CA USA</place>
+            <publisher>U.S. Geological Survey</publisher>
+         </publication>
+      </citation>
+      <citation id="d1e412">
+         <title>project ground and photo control</title>
+         <origin>U.S. Geological Survey</origin>
+         <geoform>remote-sensing image</geoform>
+         <publication>
+            <pubdate date="Unpublished"/>
+            <place>Menlo Park, CA USA</place>
+            <publisher>U.S. Geological Survey</publisher>
+         </publication>
+      </citation>
+      <citation id="d1e469">
+         <title>Report of calibration</title>
+         <origin>U.S. Geological Survey</origin>
+         <geoform>remote-sensing image</geoform>
+         <publication>
+            <pubdate date="Unpublished"/>
+            <place>Menlo Park, CA USA</place>
+            <publisher>U.S. Geological Survey</publisher>
+         </publication>
+      </citation>
+   </citations>
+   <datasets>
+      <dataset>http://gstore.unm.edu/apps/rgis/datasets/a427563f-3c7e-44a2-8b35-68ce2a78001a/metadata/ISO-19115:2003.xml</dataset>
+      <dataset>http://gstore.unm.edu/apps/rgis/datasets/e363d3c5-b371-4c6b-9157-5ac01bb93f8d/metadata/ISO-19115:2003.xml</dataset>
+      <dataset>http://gstore.unm.edu/apps/rgis/datasets/0f3ca80c-2d50-4a33-8df8-c80ff9e94588/metadata/ISO-19115:2003.xml</dataset>
+      <dataset>http://gstore.unm.edu/apps/rgis/datasets/8c53a01e-c8bf-40de-a9b9-3c2e3f037ebb/metadata/ISO-19115:2003.xml</dataset>
+   </datasets>
+</metadata>

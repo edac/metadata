@@ -1,0 +1,65 @@
+{
+    "_index": "gstore",
+    "_type": "collection",
+    "_id": "fe736f09-41ca-4a06-8083-ca0bc4889389",
+    "_version": 1,
+    "exists": true,
+    "_source": {
+        "collection": {
+            "embargo": false,
+            "available": true,
+            "isotopic": "imagery",
+            "title": "modis a collection",
+            "taxonomy": [
+                "geoimage",
+                "vector"
+            ],
+            "abstract": "Orthophotos combine the image characteristics of a photograph with the geometric qualities of a map. The primary digital orthophotoquadrangle (DOQ) is a 1-meter ground resolution, quarter-quadrangle (3.75 minutes of latitude by 3.75 minutes of longitude) image cast on the Universal Transverse Mercator projection (UTM) on the North American Datum of 1983 (NAD83). The geographic extent of the DOQ is equivalent to a quarter-quadrangle plus the overedge ranges from a minimum of 50 meters to a maximum of 300 meters beyond the extremes of the primary and secondary corner points.",
+            "area": 0.235356,
+            "applications": [
+                "rgis"
+            ],
+            "category_facets": [
+                {
+                    "theme": "Satellite Imagery",
+                    "subtheme": "MODIS",
+                    "groupname": "New Mexico",
+                    "apps": [
+                        "rgis"
+                    ]
+                }
+            ],
+            "location": {
+                "bbox": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -108.976616776,
+                                34.9414658
+                            ],
+                            [
+                                -108.976616776,
+                                38.5586944043
+                            ],
+                            [
+                                -104.160358524,
+                                38.5586944043
+                            ],
+                            [
+                                -104.160358524,
+                                34.9414658
+                            ],
+                            [
+                                -108.976616776,
+                                34.9414658
+                            ]
+                        ]
+                    ]
+                }
+            },
+            "date_added": "2013-11-10",
+            "active": true
+        }
+    }
+}

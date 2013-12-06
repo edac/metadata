@@ -1,0 +1,73 @@
+{
+    "_index": "gstore",
+    "_type": "dataset",
+    "_id": "42caae77-7536-4423-bdc1-5d42b6635d4a",
+    "_version": 1,
+    "exists": true,
+    "_source": {
+        "dataset": {
+            "embargo": false,
+            "available": true,
+            "isotopic": "",
+            "title": "STRAWBERRY PEAK, SW NAIP DOQQ (3310660) - 2011",
+            "taxonomy": "geoimage",
+            "abstract": "\nThis data set contains imagery from the National Agriculture\nImagery Program (NAIP).  The NAIP program is administered by\nUSDA FSA and has been established to support two main FSA\nstrategic goals centered on agricultural production.\nThese are, increase stewardship of America's natural resources\nwhile enhancing the environment, and to ensure commodities\nare procured and distributed effectively and efficiently to\nincrease food security.  The NAIP program supports these goals by\nacquiring and providing orthoimagery that has been collected\nduring the agricultural growing season in the U.S. The NAIP\northoimagery is tailored to meet FSA requirements and is a\nfundamental tool used to support FSA farm and conservation\nprograms.  Orthoimagery provides an effective, intuitive\nmeans of communication about farm program administration\nbetween FSA and stakeholders.\nNew technology and innovation is identified by fostering and\nmaintaining a relationship with vendors and government\npartners, and by keeping pace with the broader geospatial\ncommunity.  As a result of these efforts the NAIP program\nprovides three main products: DOQQ tiles,\nCompressed County Mosaics (CCM), and Seamline shape files\nThe Contract specifications for NAIP imagery have changed\nover time reflecting agency requirements and improving\ntechnologies.  These changes include image resolution,\nhorizontal accuracy, coverage area, and number of bands.\nIn general, flying seasons are established by FSA and are\ntargeted for peak crop growing conditions.  The NAIP\nacquisition cycle is based on a minimum 3 year refresh of base\northo imagery.  The tiling format of the NAIP imagery is based\non a 3.75' x 3.75' quarter quadrangle with a 300 pixel buffer\non all four sides.  NAIP quarter quads are formatted to the UTM\ncoordinate system using the North American Datum of 1983.\nNAIP imagery may contain as much as 10% cloud cover per tile.\n",
+            "area": 0.004821636798645557,
+            "applications": [
+                "rgis",
+                "epscor"
+            ],
+            "category_facets": [
+                {
+                    "subtheme": "2011 NAIP",
+                    "theme": "Digital Orthophotography",
+                    "apps": [
+                        "rgis",
+                        "epscor"
+                    ],
+                    "groupname": "NAIP Imagery - New Mexico (1m)"
+                }
+            ],
+            "location": {
+                "bbox": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -106.628261111,
+                                32.9963527778
+                            ],
+                            [
+                                -106.559172222,
+                                32.9963527778
+                            ],
+                            [
+                                -106.559172222,
+                                33.0661416667
+                            ],
+                            [
+                                -106.628261111,
+                                33.0661416667
+                            ],
+                            [
+                                -106.628261111,
+                                32.9963527778
+                            ]
+                        ]
+                    ]
+                }
+            },
+            "formats": [
+                "tif",
+                "sid"
+            ],
+            "services": [
+                "wms",
+                "wcs"
+            ],
+            "date_added": "2013-09-24",
+            "active": true,
+            "aliases": []
+        }
+    }
+}

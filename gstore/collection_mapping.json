@@ -1,0 +1,73 @@
+{
+    "collection": {
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "abstract": {
+                "type": "string"
+            },
+            "active": {
+                "type": "boolean"
+            },
+            "applications": {
+                "type": "string",
+                "index_name": "application"
+            },
+            "area": {
+                "type": "double"
+            },
+            "available": {
+                "type": "boolean"
+            },
+            "category_facets": {
+                "type": "nested",
+                "properties": {
+                    "apps": {
+                        "type": "string"
+                    },
+                    "groupname": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "omit_norms": true,
+                        "index_options": "docs"
+                    },
+                    "subtheme": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "omit_norms": true,
+                        "index_options": "docs"
+                    },
+                    "theme": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "omit_norms": true,
+                        "index_options": "docs"
+                    }
+                }
+            },
+            "date_added": {
+                "type": "date",
+                "format": "YYYY-MM-dd"
+            },
+            "embargo": {
+                "type": "boolean"
+            },
+            "isotopic": {
+                "type": "string"
+            },
+            "location": {
+                "properties": {
+                    "bbox": {
+                        "type": "geo_shape",
+                        "tree": "quadtree",
+                        "tree_levels": 40
+                    }
+                }
+            },
+            "taxonomy": {
+                "type": "string"
+            }
+        }
+    }
+}

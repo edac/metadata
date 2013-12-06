@@ -1,0 +1,25 @@
+{
+    "title": "Gowdy Ranch, NM, NE Quarter",
+    "description": "Orthophotos combine the image characteristics of a photograph with the geometric qualities of a map. The primary digital orthophotoquadrangle (DOQ) is a 1-meter ground resolution, quarter-quadrangle (3.75 minutes of latitude by 3.75 minutes of longitude) image cast on the Universal Transverse Mercator projection (UTM) on the North American Datum of 1983 (NAD83). The geographic extent of the DOQ is equivalent to a quarter-quadrangle plus the overedge ranges from a minimum of 50 meters to a maximum of 300 meters beyond the extremes of the primary and secondary corner points.",
+    "keyword": ["DOQ","digital image map","digital orthophotoquad","DOQQ","quarter-quadrangle orthophoto","rectified photograph","orthophoto","1-meter orthophoto","3.75 x 3.75 minute orthophoto","aerial photograph","digital orthophoto"],
+    "modified": "2004-03-26T00:00:00Z",
+    "publisher": "Earth Data Analysis Center",
+    "contactPoint": "Clearinghouse Manager",
+    "mbox": "clearinghouse@edac.unm.edu",
+    "identifier": "1992edb4-d4a3-4667-882a-1924c142371c",
+    "accessLevel": "public",
+    "accessLevelComment": "",
+    "distribution": [
+                {
+                "accessURL": "http://gstore.unm.edu/apps/rgis/datasets/1992edb4-d4a3-4667-882a-1924c142371c/c32105c16.original.tif",
+                "format": "Tagged Image File Format (TIFF)"
+                },
+                {
+                "accessURL": "http://gstore.unm.edu/apps/rgis/datasets/1992edb4-d4a3-4667-882a-1924c142371c/c32105c16.derived.sid",
+                "format": "Multi-resolution Seamless Image Database (MrSID)"
+                }],
+    "webService": "http://gstore.unm.edu/apps/rgis/datasets/1992edb4-d4a3-4667-882a-1924c142371c/metadata/FGDC-STD-012-2002.xml",
+    "license": "Public Domain",
+    "spatial": "Otero County (35035)",
+    "temporal": "2003-01-05T00:00:00Z"
+}

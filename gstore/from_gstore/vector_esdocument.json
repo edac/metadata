@@ -1,0 +1,60 @@
+{
+    "_index": "gstore",
+    "_type": "dataset",
+    "_id": "c9ca5336-e72e-4e19-a225-9a4bfff311a2",
+    "_version": 2,
+    "exists": true,
+    "_source": {
+        "dataset": {
+            "embargo": false,
+            "available": true,
+            "isotopic": "climatologyMeteorologyAtmosphere",
+            "title": "SNOTEL Sierra Blanca, NM (Nov, 2013)",
+            "taxonomy": "vector",
+            "abstract": "The basic SNOTEL station provides snowpack water content data via a\n\t\t\t\tpressure-sensing snow pillow. It also collects data on snow depth, all-season\n\t\t\t\tprecipitation accumulation, and air temperature with daily maximums, minimums, and\n\t\t\t\taverages. The atmospheric measurements are generally reported multiple times per day\n\t\t\t\twith some reporting hourly. System performance is usually above 99%.",
+            "area": 0,
+            "geomtype": "point",
+            "applications": [
+                "epscor",
+                "rgis"
+            ],
+            "category_facets": [
+                {
+                    "subtheme": "SNOTEL",
+                    "theme": "Climate",
+                    "apps": [
+                        "epscor",
+                        "rgis"
+                    ],
+                    "groupname": "New Mexico"
+                }
+            ],
+            "location": {
+                "bbox": {
+                    "type": "Point",
+                    "coordinates": [
+                        -105.7833333,
+                        33.4
+                    ]
+                }
+            },
+            "formats": [
+                "zip",
+                "shp",
+                "kml",
+                "csv",
+                "xls",
+                "json",
+                "gml",
+                "geojson"
+            ],
+            "services": [
+                "wms",
+                "wfs"
+            ],
+            "date_added": "2013-12-02",
+            "active": "true",
+            "aliases": []
+        }
+    }
+}

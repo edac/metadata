@@ -1,0 +1,89 @@
+{
+    "dataset": {
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "abstract": {
+                "type": "string"
+            },
+            "active": {
+                "type": "boolean"
+            },
+            "aliases": {
+                "type": "string",
+                "index_name": "alias"
+            },
+            "applications": {
+                "type": "string",
+                "index_name": "application"
+            },
+            "area": {
+                "type": "double"
+            },
+            "available": {
+                "type": "boolean"
+            },
+            "category_facets": {
+                "type": "nested",
+                "properties": {
+                    "apps": {
+                        "type": "string"
+                    },
+                    "groupname": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "omit_norms": true,
+                        "index_options": "docs"
+                    },
+                    "subtheme": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "omit_norms": true,
+                        "index_options": "docs"
+                    },
+                    "theme": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "omit_norms": true,
+                        "index_options": "docs"
+                    }
+                }
+            },
+            "collections": {
+                "type": "string"
+            },
+            "date_added": {
+                "type": "date",
+                "format": "YYYY-MM-dd"
+            },
+            "embargo": {
+                "type": "boolean"
+            },
+            "formats": {
+                "type": "string"
+            },
+            "geomtype": {
+                "type": "string"
+            },
+            "isotopic": {
+                "type": "string"
+            },
+            "location": {
+                "properties": {
+                    "bbox": {
+                        "type": "geo_shape",
+                        "tree": "quadtree",
+                        "tree_levels": 40
+                    }
+                }
+            },
+            "services": {
+                "type": "string"
+            },
+            "taxonomy": {
+                "type": "string"
+            }
+        }
+    }
+}

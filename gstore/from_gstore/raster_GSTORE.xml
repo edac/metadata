@@ -1,0 +1,426 @@
+<metadata>
+   <original>
+      <standard version="FGDC-STD-001-1998">
+         <title>Content Standard for Digital Geospatial Metadata</title>
+      </standard>
+   </original>
+   <identification dataset="42caae77-7536-4423-bdc1-5d42b6635d4a">
+      <title>STRAWBERRY PEAK, SW NAIP DOQQ (3310660) - 2011</title>
+      <abstract>
+This data set contains imagery from the National Agriculture
+Imagery Program (NAIP).  The NAIP program is administered by
+USDA FSA and has been established to support two main FSA
+strategic goals centered on agricultural production.
+These are, increase stewardship of America's natural resources
+while enhancing the environment, and to ensure commodities
+are procured and distributed effectively and efficiently to
+increase food security.  The NAIP program supports these goals by
+acquiring and providing orthoimagery that has been collected
+during the agricultural growing season in the U.S. The NAIP
+orthoimagery is tailored to meet FSA requirements and is a
+fundamental tool used to support FSA farm and conservation
+programs.  Orthoimagery provides an effective, intuitive
+means of communication about farm program administration
+between FSA and stakeholders.
+New technology and innovation is identified by fostering and
+maintaining a relationship with vendors and government
+partners, and by keeping pace with the broader geospatial
+community.  As a result of these efforts the NAIP program
+provides three main products: DOQQ tiles,
+Compressed County Mosaics (CCM), and Seamline shape files
+The Contract specifications for NAIP imagery have changed
+over time reflecting agency requirements and improving
+technologies.  These changes include image resolution,
+horizontal accuracy, coverage area, and number of bands.
+In general, flying seasons are established by FSA and are
+targeted for peak crop growing conditions.  The NAIP
+acquisition cycle is based on a minimum 3 year refresh of base
+ortho imagery.  The tiling format of the NAIP imagery is based
+on a 3.75' x 3.75' quarter quadrangle with a 300 pixel buffer
+on all four sides.  NAIP quarter quads are formatted to the UTM
+coordinate system using the North American Datum of 1983.
+NAIP imagery may contain as much as 10% cloud cover per tile.
+</abstract>
+      <purpose>
+NAIP imagery is available for distribution within 60 days
+of the end of a flying season and is intended to provide current
+information of agricultural conditions in support of USDA farm
+programs. For USDA Farm Service Agency, the 1 meter and 1/2 meter
+GSD product provides an orthoimage base for Common Land Unit
+boundaries and other data sets.  The 1 meter and 1/2 meter NAIP
+imagery is generally acquired in projects covering full states in
+cooperation with state government and other federal agencies that
+use the imagery for a variety of purposes including land use
+planning and natural resource assessment.  The NAIP is also used
+for disaster response.  While suitable for a variety of uses,
+prior to 2007 the 2 meter GSD NAIP imagery was primarily intended
+to assess "crop condition and compliance" to USDA farm program
+conditions. The 2 meter imagery was generally acquired only
+for agricultural areas within state projects.
+</purpose>
+      <supplinfo>Images are available for download in two formats.  GeoTiff four band image and MrSid RGB.</supplinfo>
+      <contact role="point-contact" ref="d1e152"/>
+      <citation role="identify" ref="d1e10"/>
+      <time>
+         <single date="2011-05-21"/>
+         <current>Ground Condition</current>
+      </time>
+      <themes>
+         <theme thesaurus="None">
+            <term>farming</term>
+            <term>Digital Ortho rectified Image</term>
+            <term>Ortho Rectification</term>
+            <term>Quarter Quadrangle</term>
+            <term>NAIP</term>
+            <term>Aerial Compliance</term>
+            <term>Compliance</term>
+         </theme>
+      </themes>
+      <places>
+         <place thesaurus="Geographic Names Information System">
+            <term>NM</term>
+            <term>Sierra</term>
+            <term>35051</term>
+            <term>NM051</term>
+            <term>SIERRA CO NM FSA</term>
+            <term>3310660</term>
+            <term>STRAWBERRY PEAK, SW</term>
+            <term>STRAWBERRY PEAK</term>
+         </place>
+      </places>
+      <browse>
+         <filename>None</filename>
+         <description>None</description>
+         <filetype>None</filetype>
+      </browse>
+      <native>Unknown</native>
+   </identification>
+   <constraints>
+      <access type="data">There are no limitations for access.</access>
+      <use type="data">
+None.  The USDA-FSA Aerial Photography Field office
+asks to be credited in derived products.
+</use>
+   </constraints>
+   <spatial>
+      <west>-106.628261111</west>
+      <east>-106.559172222</east>
+      <south>32.9963527778</south>
+      <north>33.0661416667</north>
+      <indspref>SIERRA</indspref>
+      <sprefs>
+         <spref type="datum">
+            <code>4269</code>
+            <authority>EPSG</authority>
+            <onlineref>http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269</onlineref>
+            <title>North American Datum of 1983</title>
+         </spref>
+         <spref type="ellipsoid">
+            <code>7019</code>
+            <authority>EPSG</authority>
+            <onlineref>http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:ellipsoid:EPSG::7019</onlineref>
+            <title>Geodetic Reference System 80 (GRS 80)</title>
+         </spref>
+         <spref type="gridsys">
+            <code>26713</code>
+            <authority>EPSG</authority>
+            <onlineref>http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::26713</onlineref>
+            <title>Universal Transverse Mercator, 13</title>
+         </spref>
+      <representation type="fgdc"><def>
+            <gridsys>
+                <gridsysn>Universal Transverse Mercator</gridsysn>
+                <utm>
+                    <utmzone>13</utmzone>
+                    <transmer>
+                        <sfctrmer>0.999600</sfctrmer>
+                        <longcm>-105.000000</longcm>
+                        <latprjo>0.000000</latprjo>
+                        <feast>500000.000000</feast>
+                        <fnorth>0.000000</fnorth>
+                    </transmer>
+                </utm>
+            </gridsys>
+            <geodetic>
+                <horizdn>North American Datum of 1927</horizdn>
+                <ellips>Clarke 1866</ellips>
+                <semiaxis>6378206.400000</semiaxis>
+                <denflat>294.978698</denflat>
+            </geodetic>
+        </def>
+    </representation></sprefs>
+      <raster type="Pixel" cval="unsigned eight-bit integer">
+         <rows>6570</rows>
+         <columns>7640</columns>
+      </raster>
+   </spatial>
+   <quality>
+      <progress>Complete</progress>
+      <update>Irregular</update>
+      <logical>
+NAIP 3.75 minute tile file names are based
+on the USGS quadrangle naming convention.
+</logical>
+      <completeness>None</completeness>
+      <qual type="horizontal">
+         <report>
+NAIP horizontal accuracy specifications have evolved over
+the life of the program.  From 2003 to 2004 the
+specifications were as follows: 1-meter GSD imagery was
+to match within 3-meters, and 2-meter GSD to match within 10
+meters of reference imagery.  For 2005 the 1-meter GSD
+specification was changed to 5 meters matching the reference
+imagery.  In 2006 a pilot project was performed using true
+ground specifications rather than reference imagery.  All
+states used the same specifications as 2005 except Utah,
+which required a match of +/- 6 meters to true ground.
+In 2007 all specifications were the same as 2006 except
+Arizona used true ground specifications and all other states
+used reference imagery.  In 2008 and subsequent years
+no 2-meter GSD imagery was acquired and all specifications
+were the same as 2007 except approximately half of the
+states acquired used true ground specifications and the
+other half used reference imagery.  The 2008 states that
+used absolute ground control where; Indiana, Minnesota,
+New Hampshire, North Carolina, Texas, Vermont, and Virginia.
+From 2009 to present all NAIP imagery acquisitions used
+the +/- 6 meters to ground specification.
+</report>
+      </qual>
+   </quality>
+   <lineage>
+      <step id="1">
+         <description>
+Digital imagery was collected at a nominal GSD of 1.0m
+
+using three Cessna 441 aircrafts flying at an average
+
+flight height of 9052m AGL. N14NW, N16NW flew with
+
+Leica Geosystem's ADS80/SH82 digital sensors sn30017 &amp;
+
+sn30034 both with firmware 3.15. N911PJ flew with Leica
+
+Geosystem's ADS40/SH52 digital sensor sn30014 with
+
+firmware v2.14. Each sensor collected 11 image bands.
+
+PanF27A,PanF02A and PanB14A panchromatic bands with a
+
+spectral range of 465-676nm. RedN00a and RedB16a with a
+
+spectral range of 604-664nm. GrnN00a and GrnB16a with a
+
+spectral range of 533-587nm. BluN00a and BluB16a with a
+
+spectral range of 420-492nm and Near-infrared bands
+
+NirN00a and NirB16a with a spectral range of 833-920nm.
+
+The CCD arrays have a pixel size of 6.5 microns in a
+
+12000x1 format. Both the CCD's and the A/D convertors
+
+have a dynamic range of 12bits. The data is stored in
+
+16bit format. The ADS is a push-broom sensor and the
+
+ground footprint of the imagery at NAIP scale is 12km
+
+wide by the length flightline. The maximum flightline
+
+length is limited to approximately 240km.
+
+The factory calibrations and IMU alignments for each
+
+sensor (sn30017 8/6/2009, sn30014 5/15/2008 and
+
+sn30034 12/7/2007) were tested and verified by in-situ
+
+test flights before the start of the project.
+
+The Leica ADS Flight Planning and Evaluation Software
+
+(FPES) is used to develop the flight acquisition plans.
+
+Flight acquisition sub blocks are designed first to
+
+define the GNSS base station logistics, and to break
+
+the project up into manageable acquisition units. The
+
+flight acquisition sub blocks are designed based on
+
+the specified acquisition season, native UTM zone of
+
+the DOQQs, flight line length limitations (to ensure
+
+sufficient performance of the IMU solution) as well
+
+as air traffic restrictions in the area. Once the sub
+
+blocks have been delineated they are brought into FPES
+
+for flight line design. The design parameters used in
+
+FPES will be 30% lateral overlap and 1.0m resolution.
+
+The flight lines have been designed with a north/south
+
+orientation. The design takes into account the
+
+latitude of the state, which affects line spacing due
+
+to convergence as well as the terrain. SRTM elevation
+
+data is used in the FPES design to ensure the 1m GSD
+
+is achieved over all types of terrain.
+
+The raw data was downloaded from the sensors after
+
+each flight using Leica XPro software. The imagery was
+
+then georeferenced using the 200Hz GPS/INS data
+
+creating an exterior orientation for each scan line
+
+(x/y/z/o/p/k). Technicians precisely measured tie
+
+points in 3 bands/looks (Back/Nadir/Forward) for each
+
+line using Leica Xpro software. The resulting point
+
+data and exterior orientation data were used to
+
+perform a full bundle adjustment with ORIMA software.
+
+Blunders were removed, and additional tie points
+
+measured in weak areas to ensure a robust solution.
+
+Once the point data was clean and point coverage was
+
+acceptable, photo-identifiable GPS-surveyed ground
+
+control points were introduced into the block
+
+adjustment. The bundle adjustment process produces
+
+revised exterior orientation data for the sensor with
+
+GPS/INS, datum, and sensor calibration errors modeled
+
+and removed. Using the revised exterior orientation
+
+from the bundle adjustment, orthorectified image
+
+strips were created with Xpro software and the May
+
+2011 USGS 10m NED DEM. The Xpro orthorectification
+
+software applies an atmospheric-BRDF radiometric
+
+correction to the imagery. This correction compensates
+
+for atmospheric absorption, solar illumination angle
+
+and bi-directional reflectance. The orthorectified
+
+strips were then overlaid with each other and the
+
+ground control to check accuracy. Once the accuracy of
+
+the orthorectified image strips were validated the
+
+strips were then imported into Inpho's OrthoVista 4.5
+
+package which was used for the final radiometric
+
+balance, mosaic, and DOQQ sheet creation. The final
+
+DOQQ sheets, with a 300m buffer and a ground pixel
+
+resolution of 1m were then combined and compressed to
+
+create the county wide CCMs.
+</description>
+         <rundate date="2013-05-09"/>
+      </step>
+   </lineage>
+   <attributes>
+      <overview>32-bit pixels, 4 band color(RGBIR) values 0 - 255</overview>
+      <eacite>None</eacite>
+   </attributes>
+   <metadata>
+      <contact role="point-contact" ref="gstore-100"/>
+      <pubdate date="2013-12-06" time="08:15:21"/>
+   </metadata>
+   <distribution><distributor><contact role="distributor" ref="gstore-200"/><liability>The material on this site is made available as a public service. Maps and data are to be used for reference purposes only and the Earth Data Analysis Center (EDAC), Resource Geographic Information System (RGIS) and The University of New Mexico are not responsible for any inaccuracies herein contained. No responsibility is assumed for damages or other liabilities due to the accuracy, availability, use or misuse of the information herein provided. Unless otherwise indicated in the documentation (metadata) for individual data sets, information on this site is public domain and may be copied without permission; citation of the source is appreciated.</liability><instructions>Contact Earth Data Analysis Center at clearinghouse@edac.unm.edu</instructions><fees>None. The files are available to download from Resource Geographic Information System (RGIS) (http://rgis.unm.edu).</fees><ordering>Contact Earth Data Analysis Center at clearinghouse@edac.unm.edu</ordering><prereqs>Adequate computer capability is the only technical prerequisite for viewing data in digital form.</prereqs><access>Download from Resource Geographic Information System (RGIS) at http://rgis.unm.edu.</access><description>Downloadable Data</description><downloads><download><type>Tagged Image File Format (TIFF)</type><size>192</size><link>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/m_3310660_sw_13_1_20110521.original.tif</link></download><download><type>Multi-resolution Seamless Image Database (MrSID)</type><size>8</size><link>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/m_3310660_sw_13_1_20110521.derived.sid</link></download></downloads></distributor></distribution><contacts>
+      <contact id="d1e152">
+         <organization>
+            <name>Aerial Photography Field Office (APFO)</name>
+         </organization>
+         <address type="mailing and physical address">
+            <addr>2222 West 2300 South</addr>
+            <city>Salt Lake City</city>
+            <state>Utah</state>
+            <postal>84119-2020</postal>
+            <country>USA</country>
+         </address>
+         <voice>801-844-2922</voice>
+         <fax>801-956-3653</fax>
+         <email>apfo.sales@slc.usda.gov</email>
+      </contact>
+      <contact id="d1e398">
+         <position>Clearinghouse Manager</position>
+         <organization>
+            <name>Earth Data Analysis Center</name>
+         </organization>
+         <address type="mailing and physical address">
+            <addr>MSC01 1110</addr>
+            <addr>1 University of New Mexico</addr>
+            <city>Albuquerque</city>
+            <state>NM</state>
+            <postal>87131-0001</postal>
+            <country>USA</country>
+         </address>
+         <voice>505-277-3622 ext. 230</voice>
+         <fax>505-277-3614</fax>
+         <email>clearinghouse@edac.unm.edu</email>
+         <hours>0800 - 1700 MT, M-F -7 hours GMT</hours>
+      </contact>
+   <contact id="gstore-100"><position>Clearinghouse Manager</position><organization><name>Earth Data Analysis Center</name></organization><address type="mailing and physical address"><addr>MSC01 1110</addr><addr>1 University of New Mexico</addr><city>Albuquerque</city><state>NM</state><postal>87131-0001</postal><country>USA</country></address><voice>505-277-3622 ext. 230</voice><fax>505-277-3614</fax><email>clearinghouse@edac.unm.edu</email><hours>0800 - 1700 MT, M-F -7 hours GMT</hours></contact><contact id="gstore-200"><position>Clearinghouse Manager</position><organization><name>Earth Data Analysis Center</name></organization><address type="mailing and physical address"><addr>MSC01 1110</addr><addr>1 University of New Mexico</addr><city>Albuquerque</city><state>NM</state><postal>87131-0001</postal><country>USA</country></address><voice>505-277-3622 ext. 230</voice><fax>505-277-3614</fax><email>clearinghouse@edac.unm.edu</email><hours>0800 - 1700 MT, M-F -7 hours GMT</hours></contact></contacts>
+   <citations>
+      <citation id="d1e10">
+         <title>STRAWBERRY PEAK, SW NAIP DOQQ (3310660) - 2011</title>
+         <origin>USDA-FSA-APFO Aerial Photography Field Office</origin>
+         <geoform>remote-sensing image</geoform>
+         <publication>
+            <pubdate date="2013-05-09"/>
+            <place>Salt Lake City, Utah</place>
+            <publisher>USDA-FSA-APFO Aerial Photography Field Office</publisher>
+         </publication>
+      <onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wms?SERVICE=wms&amp;REQUEST=GetCapabilities&amp;VERSION=1.1.1</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/services/ogc/wcs?SERVICE=wcs&amp;REQUEST=GetCapabilities&amp;VERSION=1.1.2</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/m_3310660_sw_13_1_20110521.original.tif</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/m_3310660_sw_13_1_20110521.derived.sid</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/FGDC-STD-012-2002.xml</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/FGDC-STD-012-2002.html</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19119:WMS.xml</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19115:2003.xml</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19115:2003.html</onlink><onlink>http://gstore.unm.edu/apps/rgis/datasets/42caae77-7536-4423-bdc1-5d42b6635d4a/metadata/ISO-19119:WCS.xml</onlink></citation>
+      <citation id="d1e233">
+         <title>STRAWBERRY PEAK, SW</title>
+         <origin>USDA-FSA-APFO Aerial Photography Field Office</origin>
+         <geoform>remote-sensing image</geoform>
+         <publication>
+            <pubdate date="2013-05-09"/>
+         </publication>
+      </citation>
+   </citations>
+   <sources>
+      <source id="d5e2" type="lineage">
+         <type>Unknown</type>
+         <alias>Georectifed Image</alias>
+         <contribution>Digital Georectifed Image.</contribution>
+         <current>Aerial Photography Date for aerial photo source.</current>
+         <srcdate>
+            <single date="2011-05-21"/>
+         </srcdate>
+         <citation ref="d1e233"/>
+      </source>
+   </sources>
+</metadata>

@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gfc:FC_FeatureCatalogue xmlns:gfc="http://www.isotc211.org/2005/gfc"
+                         xmlns:gmx="http://www.isotc211.org/2005/gmx"
+                         xmlns:gts="http://www.isotc211.org/2005/gts"
+                         xmlns:gsr="http://www.isotc211.org/2005/gsr"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xmlns:gml="http://www.opengis.net/gml/3.2"
+                         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         xmlns:gss="http://www.isotc211.org/2005/gss"
+                         xmlns:gco="http://www.isotc211.org/2005/gco"
+                         xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                         xmlns="http://www.isotc211.org/2005/gfc"
+                         id="FC001"
+                         uuid=""
+                         xsi:schemaLocation="http://www.isotc211.org/2005/gfc http://www.isotc211.org/2005/gfc/gfc.xsd">
+   <gmx:name>
+      <gco:CharacterString>Feature Catalogue for SNOTEL Sierra Blanca, NM (Nov, 2013)</gco:CharacterString>
+   </gmx:name>
+   <gmx:scope gco:nilReason="unknown"/>
+   <gmx:versionNumber gco:nilReason="unknown"/>
+   <gmx:versionDate gco:nilReason="unknown"/>
+   <gmx:language>
+      <gco:CharacterString>eng; US</gco:CharacterString>
+   </gmx:language>
+   <gmx:characterSet>
+      <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode"
+                               codeListValue="utf8"/>
+   </gmx:characterSet>
+   <gfc:producer>
+      <gmd:CI_ResponsibleParty>
+         <gmd:organisationName>
+            <gco:CharacterString/>
+         </gmd:organisationName>
+         <gmd:positionName>
+            <gco:CharacterString>Clearinghouse Manager</gco:CharacterString>
+         </gmd:positionName>
+         <gmd:contactInfo>
+            <gmd:CI_Contact>
+               <gmd:phone>
+                  <gmd:CI_Telephone>
+                     <gmd:voice>
+                        <gco:CharacterString>505-277-3622 ext. 230</gco:CharacterString>
+                     </gmd:voice>
+                     <gmd:facsimile>
+                        <gco:CharacterString>505-277-3614</gco:CharacterString>
+                     </gmd:facsimile>
+                  </gmd:CI_Telephone>
+               </gmd:phone>
+               <gmd:address>
+                  <gmd:CI_Address>
+                     <gmd:deliveryPoint>
+                        <gco:CharacterString>MSC01 1110</gco:CharacterString>
+                     </gmd:deliveryPoint>
+                     <gmd:deliveryPoint>
+                        <gco:CharacterString>1 University of New Mexico</gco:CharacterString>
+                     </gmd:deliveryPoint>
+                     <gmd:city>
+                        <gco:CharacterString>Albuquerque</gco:CharacterString>
+                     </gmd:city>
+                     <gmd:administrativeArea>
+                        <gco:CharacterString>NM</gco:CharacterString>
+                     </gmd:administrativeArea>
+                     <gmd:postalCode>
+                        <gco:CharacterString>87131-0001</gco:CharacterString>
+                     </gmd:postalCode>
+                     <gmd:country>
+                        <gco:CharacterString>USA</gco:CharacterString>
+                     </gmd:country>
+                     <gmd:electronicMailAddress>
+                        <gco:CharacterString>clearinghouse@edac.unm.edu</gco:CharacterString>
+                     </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+               </gmd:address>
+               <gmd:hoursOfService>
+                  <gco:CharacterString>0800 - 1700 MT, M-F -7 hours GMT</gco:CharacterString>
+               </gmd:hoursOfService>
+            </gmd:CI_Contact>
+         </gmd:contactInfo>
+         <gmd:role>
+            <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                             codeListValue="resourceProvider"/>
+         </gmd:role>
+      </gmd:CI_ResponsibleParty>
+   </gfc:producer>
+   <gfc:featureType>
+      <gfc:FC_FeatureType>
+         <gfc:typeName>
+            <gco:LocalName>SNOTEL</gco:LocalName>
+         </gfc:typeName>
+         <gfc:definition>
+            <gco:CharacterString>SNOwpack TELemetry data</gco:CharacterString>
+         </gfc:definition>
+         <gfc:isAbstract>
+            <gco:Boolean>false</gco:Boolean>
+         </gfc:isAbstract>
+         <gfc:featureCatalogue uuidref="FC001"/>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>FID</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Internal feature number.</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>ESRI</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueType>
+                  <gco:TypeName>
+                     <gco:aName>
+                        <gco:CharacterString>Sequential unique whole numbers that are automatically generated.</gco:CharacterString>
+                     </gco:aName>
+                  </gco:TypeName>
+               </gfc:valueType>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>Shape</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Feature geometry.</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>ESRI</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueType>
+                  <gco:TypeName>
+                     <gco:aName>
+                        <gco:CharacterString>Coordinates defining the features.</gco:CharacterString>
+                     </gco:aName>
+                  </gco:TypeName>
+               </gfc:valueType>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>site_id</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>NRCS Internal Site Number</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueType>
+                  <gco:TypeName>
+                     <gco:aName>
+                        <gco:CharacterString>NRCS Internal Site Number</gco:CharacterString>
+                     </gco:aName>
+                  </gco:TypeName>
+               </gfc:valueType>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>date</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Date</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueType>
+                  <gco:TypeName>
+                     <gco:aName>
+                        <gco:CharacterString>Date</gco:CharacterString>
+                     </gco:aName>
+                  </gco:TypeName>
+               </gfc:valueType>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>time</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Time (Pacific Standard Time)</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueType>
+                  <gco:TypeName>
+                     <gco:aName>
+                        <gco:CharacterString>Time (Pacific Standard Time)</gco:CharacterString>
+                     </gco:aName>
+                  </gco:TypeName>
+               </gfc:valueType>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>wteqi_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Snow Water Equivalent</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e305">
+                     <gml:identifier codeSpace="inches"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>preci_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Precipitation Accumulated</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e329">
+                     <gml:identifier codeSpace="inches"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>tobsi_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Air Temperature Observed</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e353">
+                     <gml:identifier codeSpace="degrees Celsius"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>snwdi_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Snow Depth</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e378">
+                     <gml:identifier codeSpace="inches"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>prcph_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Precipitation Increment</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e402">
+                     <gml:identifier codeSpace="inches"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>smsi_1_2s</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Soil Moisture Percent; Sensor Height -2"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e426">
+                     <gml:identifier codeSpace="percent"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>smsi_1_8s</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Soil Moisture Percent; Sensor Height -8"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e450">
+                     <gml:identifier codeSpace="percent"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>smsi_1_20s</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Soil Moisture Percent; Sensor Height -20"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e474">
+                     <gml:identifier codeSpace="percent"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>stoi_1_2</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Soil Temperature Observed; Sensor Height -2"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e498">
+                     <gml:identifier codeSpace="degrees Celsius"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>stoi_1_8</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Soil Temperature Observed; Sensor Height -8"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e523">
+                     <gml:identifier codeSpace="degrees Celsius"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>stoi_1_20</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Soil Temperature Observed; Sensor Height -20"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e547">
+                     <gml:identifier codeSpace="degrees Celsius"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>sali_1_2</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Salinity; Sensor Height -2"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e571">
+                     <gml:identifier codeSpace="gram"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>sali_1_8</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Salinity; Sensor Height -8"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e595">
+                     <gml:identifier codeSpace="gram"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>sali_1_20</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Salinity; Sensor Height -20"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e619">
+                     <gml:identifier codeSpace="gram"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>rdci_1_2</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Real Dielectric Constant; Sensor Height -2"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e643">
+                     <gml:identifier codeSpace="unitless"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>rdci_1_8</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Real Dielectric Constant; Sensor Height -8"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e668">
+                     <gml:identifier codeSpace="unitless"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>rdci_1_20</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>"Real Dielectric Constant; Sensor Height -20"""</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e692">
+                     <gml:identifier codeSpace="unitless"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>batti_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Battery-water quality package</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e716">
+                     <gml:identifier codeSpace="volt"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>batti_2</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Battery Voltage</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e740">
+                     <gml:identifier codeSpace="volt"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>batti_3</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Battery Voltage</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e764">
+                     <gml:identifier codeSpace="volt"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>batti_4</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Battery Voltage</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e788">
+                     <gml:identifier codeSpace="volt"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>wdirvh_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Wind Direction Average</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e813">
+                     <gml:identifier codeSpace="degrees"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>wspdxh_1mx</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Wind Speed Maximum</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e837">
+                     <gml:identifier codeSpace="mph"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>wspdvh_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Wind Speed Average</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e861">
+                     <gml:identifier codeSpace="mph"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>presi_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Barometric Pressure; Sampled 10 minutes</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e885">
+                     <gml:identifier codeSpace="inches"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>sradvh_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Solar Radiation Average</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e909">
+                     <gml:identifier codeSpace="watt"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+         <gfc:carrierOfCharacteristics>
+            <gfc:FC_FeatureAttribute>
+               <gfc:memberName>
+                  <gco:LocalName>rhumvh_1</gco:LocalName>
+               </gfc:memberName>
+               <gfc:definition>
+                  <gco:CharacterString>Relative Humidity Average</gco:CharacterString>
+               </gfc:definition>
+               <gfc:cardinality gco:nilReason="unknown"/>
+               <gfc:definitionReference>
+                  <gfc:FC_DefinitionReference>
+                     <gfc:definitionSource>
+                        <gfc:FC_DefinitionSource>
+                           <gfc:source>
+                              <gmd:CI_Citation>
+                                 <gmd:title gco:nilReason="inapplicable"/>
+                                 <gmd:date gco:nilReason="unknown"/>
+                                 <gmd:citedResponsibleParty>
+                                    <gmd:CI_ResponsibleParty>
+                                       <gmd:organisationName>
+                                          <gco:CharacterString>NRCS</gco:CharacterString>
+                                       </gmd:organisationName>
+                                       <gmd:role>
+                                          <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                                           codeListValue="resourceProvider"/>
+                                       </gmd:role>
+                                    </gmd:CI_ResponsibleParty>
+                                 </gmd:citedResponsibleParty>
+                              </gmd:CI_Citation>
+                           </gfc:source>
+                        </gfc:FC_DefinitionSource>
+                     </gfc:definitionSource>
+                  </gfc:FC_DefinitionReference>
+               </gfc:definitionReference>
+               <gfc:valueMeasurementUnit>
+                  <gml:BaseUnit gml:id="d1e933">
+                     <gml:identifier codeSpace="percent"/>
+                     <gml:unitsSystem nilReason="unknown"/>
+                  </gml:BaseUnit>
+               </gfc:valueMeasurementUnit>
+            </gfc:FC_FeatureAttribute>
+         </gfc:carrierOfCharacteristics>
+      </gfc:FC_FeatureType>
+   </gfc:featureType>
+   <gfc:definitionSource>
+      <gfc:FC_DefinitionSource>
+         <gfc:source>
+            <gmd:CI_Citation>
+               <gmd:title gco:nilReason="inapplicable"/>
+               <gmd:date gco:nilReason="unknown"/>
+               <gmd:citedResponsibleParty>
+                  <gmd:CI_ResponsibleParty>
+                     <gmd:organisationName>
+                        <gco:CharacterString>NRCS - http://www.wcc.nrcs.usda.gov/snow</gco:CharacterString>
+                     </gmd:organisationName>
+                     <gmd:role>
+                        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                         codeListValue="resourceProvider"/>
+                     </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+               </gmd:citedResponsibleParty>
+            </gmd:CI_Citation>
+         </gfc:source>
+      </gfc:FC_DefinitionSource>
+   </gfc:definitionSource>
+</gfc:FC_FeatureCatalogue>
