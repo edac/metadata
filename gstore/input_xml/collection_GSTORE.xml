@@ -199,7 +199,7 @@ MSC01 1110, Bandelier West Room 111
             <place>Menlo Park, CA USA</place>
             <publisher>U.S. Geological Survey</publisher>
          </publication>
-      <onlink>http://129.24.63.115/apps/rgis/collections/fe736f09-41ca-4a06-8083-ca0bc4889389/services.json</onlink></citation>
+      <onlink>http://gstore.unm.edu/apps/rgis/collections/fe736f09-41ca-4a06-8083-ca0bc4889389/services.json</onlink></citation>
       <citation id="d1e294">
          <title>GOWDY RANCH</title>
          <origin>U.S. Geological Survey</origin>
@@ -296,4 +296,4 @@ MSC01 1110, Bandelier West Room 111
          <citation ref="d1e469"/>
       </source>
    </sources>
-<datasets><dataset>http://129.24.63.115/apps/rgis/datasets/a427563f-3c7e-44a2-8b35-68ce2a78001a/metadata/ISO-19115:2003.xml</dataset><dataset>http://129.24.63.115/apps/rgis/datasets/e363d3c5-b371-4c6b-9157-5ac01bb93f8d/metadata/ISO-19115:2003.xml</dataset><dataset>http://129.24.63.115/apps/rgis/datasets/0f3ca80c-2d50-4a33-8df8-c80ff9e94588/metadata/ISO-19115:2003.xml</dataset><dataset>http://129.24.63.115/apps/rgis/datasets/8c53a01e-c8bf-40de-a9b9-3c2e3f037ebb/metadata/ISO-19115:2003.xml</dataset></datasets></metadata>
+<datasets><dataset>http://gstore.unm.edu/apps/rgis/datasets/a427563f-3c7e-44a2-8b35-68ce2a78001a/metadata/ISO-19115:2003.xml</dataset><dataset>http://gstore.unm.edu/apps/rgis/datasets/e363d3c5-b371-4c6b-9157-5ac01bb93f8d/metadata/ISO-19115:2003.xml</dataset><dataset>http://gstore.unm.edu/apps/rgis/datasets/0f3ca80c-2d50-4a33-8df8-c80ff9e94588/metadata/ISO-19115:2003.xml</dataset><dataset>http://gstore.unm.edu/apps/rgis/datasets/8c53a01e-c8bf-40de-a9b9-3c2e3f037ebb/metadata/ISO-19115:2003.xml</dataset></datasets></metadata>
