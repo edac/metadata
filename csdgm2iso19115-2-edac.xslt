@@ -1067,7 +1067,7 @@
 							</gmd:MD_Keywords>
 						</gmd:descriptiveKeywords>
 					</xsl:for-each>
-					<xsl:for-each select="idinfo/keywords/statum">
+					<xsl:for-each select="idinfo/keywords/stratum">
 						<gmd:descriptiveKeywords>
 							<gmd:MD_Keywords>
 								<xsl:for-each select="stratkey">
